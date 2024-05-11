@@ -1,0 +1,45 @@
+.services{
+    background: linear-gradient(108.64deg, rgba(69, 99, 255, 0.075) 2.35%, rgba(248, 83, 221, 0.05) 144.83%);
+    padding:  100px 165px;
+}
+
+.services__title{
+    @extend %main__title;
+    text-align: center;
+    max-width: 750px;
+    width: 100%;
+    margin:  0 auto;
+}
+.services__subtitle{
+   @extend %main__subtitle;
+   text-align: center;
+}
+
+.services__cards{
+    padding-top: 46px;
+    display: flex;
+    gap: 60px 30px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.services__card{
+
+    background-color: transparent;
+    .services__card-title{
+        text-align: center;
+    }
+
+    .secondary{
+        text-align: center;
+    }
+
+    .explore{
+        margin: 0 auto;
+    }
+}
+.services__icon{
+        width: 70px;
+        height: 70px;
+        margin: 0 auto;
+}
