@@ -1,0 +1,46 @@
+.funs{
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    &__element{
+        position: absolute;
+        top: 50px;
+        width: 757px;
+        height: 332.88px;
+
+    }
+
+    .funs__wrapper{
+        padding: 100px 35px;
+        display: flex;
+        gap: 0 175px;
+
+    }        
+}
+
+.funs__content{
+    min-width: 525px
+}
+
+.funs__title{
+            @extend %main__title;
+            max-width: 525px;
+            width: 100%;
+        }
+        .funs__subtitle{
+           @extend %main__subtitle;
+        }
+.funs__action{
+    display: flex;
+    padding-top: 46px;
+    gap: 0 20px;
+    
+    .secondary-button{
+        background-color: $main-dark-color;
+    }
+}
+
+.funs__static{
+    max-width: 470px;
+}
