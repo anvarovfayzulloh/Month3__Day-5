@@ -1,0 +1,48 @@
+.team__wrapper{
+    padding: 100px 35px;
+}
+.team__cards{
+    display: flex;
+    gap: 30px;
+    padding-top: 46px;
+
+    .team__card{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+        &:hover .team__card-icons{
+            opacity: 1;
+            bottom: 100px;
+            position: absolute;
+            z-index: 2;
+        }
+
+        img{
+            border-radius: 10px;
+        }
+
+        .team_card-title{
+            font-family: $secondary-font;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            color: $main-dark-color;
+            padding: 14px 0 4px 0px;
+            position: relative;
+        }
+        .team__card-icons{
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            justify-content: center;
+            position: absolute;
+            bottom: 0px;
+            right: 60px;
+            opacity: 0;
+
+            transition: 600ms;
+        }
+    }
+}
